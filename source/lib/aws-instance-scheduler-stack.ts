@@ -637,7 +637,7 @@ export class AwsInstanceSchedulerStack extends cdk.Stack {
     * Instance Scheduler solutions bucket reference.  
     */
     const solutionsBucket = s3.Bucket.fromBucketAttributes(this, 'SolutionsBucket', {
-      bucketName: props["solutionBucket"] + '-' + this.region
+      bucketName: props["solutionBucket"]
     });
 
     /*
